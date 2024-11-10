@@ -1,26 +1,28 @@
-import re
+import re  # 处理正则表达式
 import time
-from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support import expected_conditions as EC  # 提供了一组预定义的条件，
+from selenium.webdriver.support.wait import WebDriverWait  # 上通常与WebDriverWait一起使用，用于等待某个特定条件成立后再继续执行代码
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.common.by import By  # 定位页面元素的方法
+
 
 
 def login():
-    i_pause = input("回车输入账号密码")
-    # 定位用户名输入框并输入内容
-    username_input = driver.find_element(By.NAME, 'username')  # 通过name属性定位
-    username_input.send_keys('')  # 输入学工号/绑定手机/证件号
+    i_pause = input("在跳出的页面中自行输入账号密码并登录\n到考试页面开始考试后再回车")
+    # # 定位用户名输入框并输入内容
+    # username_input = driver.find_element(By.NAME, 'username')  # 通过name属性定位
     #
+    # username_input.send_keys('学号')  # 输入学工号/绑定手机/证件号
+    # #
+    # #
+    # # 定位密码输入框并输入内容
+    # password_input = driver.find_element(By.CSS_SELECTOR, '.ant-input[type="password"]')  # 通过CSS选择器定位密码框
+    # password_input.send_keys('密码')  # 输入密码
+    # i_pause = input("回车点击登录")
     #
-    # 定位密码输入框并输入内容
-    password_input = driver.find_element(By.CSS_SELECTOR, '.ant-input[type="password"]')  # 通过CSS选择器定位密码框
-    password_input.send_keys('')  # 输入密码
-    i_pause = input("回车点击登录")
-
-    # 定位登录按钮并点击
-    login_button = driver.find_element(By.CSS_SELECTOR, '.login-button')  # 使用CSS选择器定位登录按钮
-    login_button.click()  # 点击登录按钮
+    # # 定位登录按钮并点击
+    # login_button = driver.find_element(By.CSS_SELECTOR, '.login-button')  # 使用CSS选择器定位登录按钮
+    # login_button.click()  # 点击登录按钮
 
 
 def tn_answer(tn_text, answer_option="tm找不到"):
@@ -87,11 +89,11 @@ def tn_answer(tn_text, answer_option="tm找不到"):
 
             break
     if not found:
-        with open('output.txt', 'a', encoding='utf-8') as answer_file:
-            answer_file.write(f"\nQuestion:{question}")
-            for option, content in options.items():
-                answer_file.write(f"\n{option}: {content}")
-        print("\n未找到答案")
+        # with open('output.txt', 'a', encoding='utf-8') as answer_file:
+        #     answer_file.write(f"\nQuestion:{question}")
+        #     for option, content in options.items():
+        #         answer_file.write(f"\n{option}: {content}")
+        # print("\n未找到答案")
         button = driver.find_element(By.XPATH, '//*[@id="app"]/div/div[3]/div/div[5]/div[1]/div[3]/button')
         button.click()
 
@@ -110,7 +112,7 @@ timeout = 30
 login()
 with open('四级.txt', 'r', encoding='utf-8') as file:
     tn_lines = file.readlines()
-i_pause = input("已读取题库,回车给出当前页面答案")
+# i_pause = input("已读取题库,回车给出当前页面答案")
 for i in range(100):
     # 请求网页中所有文本
     script = "return document.body.innerText;"
@@ -121,8 +123,11 @@ for i in range(100):
     # button = driver.find_element(By.XPATH, '//*[@id="app"]/div/div[3]/div/div[5]/div[1]/div[3]/button')
     # button.click()
 
-    #i_pause = input("回车下一题")
+    # i_pause = input("回车下一题")
     time.sleep(1)
-i_pause = input("已经读取完毕,按回车结束")
+# time.sleep(240)
+# submit_button = driver.find_element(By.XPATH, '//*[@id="app"]/div/div[3]/div/div[5]/div[1]/div[3]/button')
+# submit_button.click()
+i_pause = input("已经作答完毕大部分题目,可以点击提交了")
 
 driver.quit()

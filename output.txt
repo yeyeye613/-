@@ -1,0 +1,106 @@
+
+Question:目录 清单
+A: chart .
+B: graph .
+C: list .
+D: form .
+Question:很可能(副词)
+A: well .
+B: nearly .
+C: almost .
+D: likely .
+Question:举起 提升（名词）
+A: landing .
+B: appearance .
+C: lift .
+D: lay .
+Question:[园艺]用压条法使(嫩枝)生根
+A: layer .
+B: foster .
+C: cultivate .
+D: gardening .
+Question:免得
+A: since .
+B: lest .
+C: thus .
+D: therefore .
+Question:再者 此外
+A: except .
+B: other .
+C: beside .
+D: moreover .
+Question:使重叠
+A: suck .
+B: clap .
+C: lap .
+D: chew .
+Question:multiply
+A: 中间地 .
+B: 同化 .
+C: 多样化 .
+D: 大量增加 .
+Question:海的、海上的
+A: marine .
+B: brook .
+C: stream .
+D: canal .
+Question:production
+A: 程序 .
+B: 制造 .
+C: 过程 .
+D: 进展 .
+Question:嫁、娶
+A: marry .
+B: merry .
+C: mercy .
+D: march .
+Question:modern
+A: 潮湿的 .
+B: 现代化的 .
+C: 温和的 .
+D: 谦虚的 .
+Question:缺乏(动词)
+A: decrease .
+B: need .
+C: lack .
+D: lower .
+Question:messenger
+A: 乘客 .
+B: 信差 .
+C: 驾驶员 .
+D: 收信人 .
+Question:限制(动词)
+A: encircle .
+B: delete .
+C: surround .
+D: limit .
+Question:缄默的、哑的
+A: deaf .
+B: disabled .
+C: blind .
+D: mute .
+Question:上岸(名词)
+A: boarding .
+B: sailing .
+C: equipment .
+D: landing .
+Question:在……附近
+A: over .
+B: beyond .
+C: nearby .
+D: surpass .
+Question:图书馆馆长
+A: philosopher .
+B: librarian .
+C: intellectual .
+D: litterateur .
+Question:再者 此外
+A: except .
+B: other .
+C: beside .
+D: moreover .
+Question:讲座
+A: knowledge .
+B: absence .
+C: learning .
+D: lecture .
